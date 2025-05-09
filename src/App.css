@@ -1,0 +1,92 @@
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Indian theme inspired styles */
+.gradient-text {
+  background: linear-gradient(45deg, #FF9933, #FFFFFF, #138808);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.border-pattern {
+  border-image: repeating-linear-gradient(45deg, #FF9933, #FF9933 10px, #FFFFFF 10px, #FFFFFF 20px, #138808 20px, #138808 30px) 1;
+}
+
+.glow-effect {
+  box-shadow: 0 0 15px rgba(255, 153, 51, 0.5), 0 0 30px rgba(19, 136, 8, 0.3);
+}
+
+/* Paisley-inspired decoration */
+.paisley-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0C13.4315 0 0 13.4315 0 30c0 16.5685 13.4315 30 30 30 16.5685 0 30-13.4315 30-30C60 13.4315 46.5685 0 30 0zm0 48c-9.9411 0-18-8.0589-18-18s8.0589-18 18-18 18 8.0589 18 18-8.0589 18-18 18z' fill='%23FF9933' fill-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Festival calendar styling */
+.festival-item {
+  border-left: 3px solid;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.festival-item:hover {
+  transform: translateX(5px);
+}
+
+.festival-national {
+  border-color: #FF9933;
+}
+
+.festival-religious {
+  border-color: #800080;
+}
+
+.festival-regional {
+  border-color: #138808;
+}
+
+.festival-corporate {
+  border-color: #0066CC;
+}
